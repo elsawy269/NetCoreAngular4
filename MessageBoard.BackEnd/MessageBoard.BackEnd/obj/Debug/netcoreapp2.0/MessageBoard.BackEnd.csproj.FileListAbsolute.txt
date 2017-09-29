@@ -1,0 +1,11 @@
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\bin\Debug\netcoreapp2.0\MessageBoard.BackEnd.deps.json
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\bin\Debug\netcoreapp2.0\MessageBoard.BackEnd.runtimeconfig.json
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\bin\Debug\netcoreapp2.0\MessageBoard.BackEnd.runtimeconfig.dev.json
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\bin\Debug\netcoreapp2.0\MessageBoard.BackEnd.dll
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\bin\Debug\netcoreapp2.0\MessageBoard.BackEnd.pdb
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\obj\Debug\netcoreapp2.0\MessageBoard.BackEnd.csprojResolveAssemblyReference.cache
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\obj\Debug\netcoreapp2.0\MessageBoard.BackEnd.csproj.CoreCompileInputs.cache
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\obj\Debug\netcoreapp2.0\MessageBoard.BackEnd.AssemblyInfoInputs.cache
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\obj\Debug\netcoreapp2.0\MessageBoard.BackEnd.AssemblyInfo.cs
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\obj\Debug\netcoreapp2.0\MessageBoard.BackEnd.dll
+E:\Lynda\MessageBoard\MessageBoard.BackEnd\MessageBoard.BackEnd\obj\Debug\netcoreapp2.0\MessageBoard.BackEnd.pdb
