@@ -5,12 +5,12 @@
 
 Frontend
 
-Install Angular Material design
-Using material design car
-Communicating between multiple components with Output and ViewChild
-Creating a data store in our service                             
-Handling errors with try or catch
-Navigate to a different view with route and passing and get route date
+Install Angular Material design <br />
+Using material design car <br />
+Communicating between multiple components with Output and ViewChild <br />
+Creating a data store in our service    <br />                          
+Handling errors with try or catch <br />
+Navigate to a different view with route and passing and get route date <br />
 
 Broadcast an event with subject
 
