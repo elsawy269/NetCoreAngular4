@@ -17,47 +17,47 @@ Broadcast an event with subject
 Work Promise 
 
 
-   import 'rxjs/add/operator/toPromise';
-       async ngOnInit() {
-           const response = await this._WebService.getMessage();
-           console.log(response);
-       }
+   import 'rxjs/add/operator/toPromise';<br />
+       async ngOnInit() {<br />
+           const response = await this._WebService.getMessage(); <br />
+           console.log(response);<br />
+       }<br />
 
-     getMessage() {
-           return this._http.get(`http://localhost:38077/api/messages`).toPromise();
-          }
+     getMessage() {<br />
+           return this._http.get(`http://localhost:38077/api/messages`).toPromise();<br />
+          }<br />
  
-Use Reactive Forms 
+Use Reactive Forms <br />
 
 
-Parent Component Listen to Child Component 
- Can do this with angular outOuts 
- viewChilds
- childeComponent  Output, EventEmitter } from '@angular/core'
- childeComponent  @Output() onPosted = new EventEmitter();
- ParentComponent onPosted(message) {console.log(message);}
- On add diractive <app-new-message (onPosted)="onPosted($event)"></app-new-message>
-  To function you want fire event at parent    this.onPosted.emit(this.message);
+Parent Component Listen to Child Component <br />
+ Can do this with angular outOuts <br />
+ viewChilds<br />
+ childeComponent  Output, EventEmitter } from '@angular/core'<br />
+ childeComponent  @Output() onPosted = new EventEmitter();<br />
+ ParentComponent onPosted(message) {console.log(message);}<br />
+ On add diractive <app-new-message (onPosted)="onPosted($event)"></app-new-message><br />
+  To function you want fire event at parent    this.onPosted.emit(this.message);<br />
 
 
 
 
-Push data from parent to child by viewChild
- 	import { ViewChild } from '@angular/core';
-  @ViewChild(MessagesComponent) messages: MessagesComponent; this object have any parameter or function for child
+Push data from parent to child by viewChild<br />
+ 	import { ViewChild } from '@angular/core';<br />
+  @ViewChild(MessagesComponent) messages: MessagesComponent; this object have any parameter or function for child<br />
 
 
-Create Datastore Shared between component 
+Create Datastore Shared between component <br />
 
-Create Route 
-Import router for anular route 
-import {RouterModule} from '@angular/router';
-Create List routes
-const routes = [{ path: '', component: HomeComponent }];
+Create Route <br />
+Import router for anular route <br />
+import {RouterModule} from '@angular/router';<br />
+Create List routes <br />
+const routes = [{ path: '', component: HomeComponent }]; <br />
 
-RouterModule.forRoot(routes) at module imports 
-Navigate via routerLink="/messages"
-Passting Paramter with route  
+RouterModule.forRoot(routes) at module imports  <br />
+Navigate via routerLink="/messages" <br />
+Passting Paramter with route  <br />
 
 
 { path: 'messages/:name', component: MessagesComponent }
