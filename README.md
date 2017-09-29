@@ -55,15 +55,18 @@ import {RouterModule} from '@angular/router';
 Create List routes
 const routes = [{ path: '', component: HomeComponent }];
 
-   RouterModule.forRoot(routes) at module imports 
+RouterModule.forRoot(routes) at module imports 
 Navigate via routerLink="/messages"
 Passting Paramter with route  
+
+
 { path: 'messages/:name', component: MessagesComponent }
+
 [routerLink]="['/messages',msg.owner]"
 
 Retrieve Route Parameters 
+
 import {ActivatedRoute} from '@angular/router';
-1.	 
 
 Use Observables and Http Get
 this._http.get(`${this.BASE_URL}/api/messages${owner}`).subscribe(response => {
@@ -94,14 +97,15 @@ Which allow us to access data directly from html to service
 Angular Reactive Form with form builder 
 
           Import ReactiveFormsModule at module
+          
+            form: FormGroup;
+ 
+           constructor(private fb: FormBuilder) {
+              this.form = fb.group({
+              firstName: ''
+             });
+            }
 
-    
- form: FormGroup;
- constructor(private fb: FormBuilder) {
-   this.form = fb.group({
-     firstName: ''
-   });
- }
 
  <input mdInput placeholder="Frist Name" formControlName="firstName" >
            
