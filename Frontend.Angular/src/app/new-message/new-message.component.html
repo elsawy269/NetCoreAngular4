@@ -1,0 +1,13 @@
+<md-card  class="card">
+         <md-card-content>
+
+                <md-input-container>
+                    <textarea mdInput placeholder="meassage" [(ngModel)]="message.text"></textarea>
+                </md-input-container>
+
+                <md-card-actions>
+                        <button md-button color="primary" (click)="SaveMessage()" >POST</button>
+                    </md-card-actions>
+        </md-card-content> 
+        
+</md-card>

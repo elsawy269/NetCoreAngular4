@@ -1,0 +1,11 @@
+ 
+<div *ngFor="let msg of _WebService.messages | async">
+    <md-card class="card">
+        <md-card-title [routerLink]="['/messages',msg.owner]" style="cursor: pointer;">
+            {{msg.owner}}
+        </md-card-title>
+        <md-card-content>
+            {{msg.text}} 
+        </md-card-content>
+    </md-card>
+</div>
