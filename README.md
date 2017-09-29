@@ -81,20 +81,21 @@ Broadcast an event with subject
  Instead of allowing components to access our messages array directly, which might not be safe, we can use an observable,specifically a subject. A subject allows observers to subscribe to it.And in this case, we can send our messages array through itwhenever an update through an HTTP request occurs.
 
 Steps
-1.	At service import import { Subject } from 'rxjs/Rx';
-2.	Create object will call  messagesSubject = new Subject();
-3.  this.messagesSubject.next(this.messages);
-4.	this._WebService.messagesSubject.subscribe(messages => {  this.messages = messages; });
+
+1.	At service import import { Subject } from 'rxjs/Rx';<br />
+2.	Create object will call  messagesSubject = new Subject();<br />
+3.  this.messagesSubject.next(this.messages);<br />
+4.	this._WebService.messagesSubject.subscribe(messages => {  this.messages = messages; });<br />
                                 
 
-Use Observables and the async pipe
-Which allow us to access data directly from html to service
+Use Observables and the async pipe<br />
+Which allow us to access data directly from html to service<br />
 
 
 
 
                    
-Angular Reactive Form with form builder 
+Angular Reactive Form with form builder <br />
 
           Import ReactiveFormsModule at module
           
@@ -109,28 +110,28 @@ Angular Reactive Form with form builder
 
  <input mdInput placeholder="Frist Name" formControlName="firstName" >
            
-Validate form model with reactive 
+Validate form model with reactive <br />
 
-  this.form = fb.group({
-     firstName: ['', Validators.required],
-     lastName: '',
-     email: ['', Validators.email],
-     password: ['', Validators.required],
-     confirmPassword: ['', Validators.required],
-   });
+  this.form = fb.group({<br />
+     firstName: ['', Validators.required],<br />
+     lastName: '',<br />
+     email: ['', Validators.email],<br />
+     password: ['', Validators.required],<br />
+     confirmPassword: ['', Validators.required],<br />
+   });<br />
 
-Validate Password with custome validation
-Custome Email Validatior
-
-
-
-Reactive forms with FormBuilder
-Validate with reactive forms
-Custom Validator for confirm password and Email forma
+Validate Password with custome validation<br />
+Custome Email Validatior<br />
 
 
-Create Auth Service
-Eidt User Profile 
+
+Reactive forms with FormBuilder<br />
+Validate with reactive forms<br />
+Custom Validator for confirm password and Email forma<br />
+
+
+Create Auth Service<br />
+Eidt User Profile <br />
  
 Backend 
 
