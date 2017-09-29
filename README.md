@@ -1,6 +1,6 @@
  
 
-# Building a Full-Stack Application with Angular 4, ASP.NET Core 2.0 , and Authentication
+# Building a Full-Stack Application with Angular 4, ASP.NET Core 2.0 ,  Authentication and Materiale Design
 
 
 Frontend
