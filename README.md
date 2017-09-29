@@ -1,8 +1,6 @@
-# NetCoreAngular4
-Building Angular 4 and ASP.NET Core 2.0  Apps with Authentication JWT
+ 
 
-
-Building a Full-Stack Application with Angular 4, ASP.NET Core 2.0 , and Authentication
+# Building a Full-Stack Application with Angular 4, ASP.NET Core 2.0 , and Authentication
 
 
 Frontend
@@ -18,32 +16,35 @@ Broadcast an event with subject
 
 Work Promise 
 
-import 'rxjs/add/operator/toPromise';
-  async ngOnInit() {
-   const response = await this._WebService.getMessage();
-   console.log(response);
- }
-getMessage() {
-  return this._http.get(`http://localhost:38077/api/messages`).toPromise();
- }
+
+   import 'rxjs/add/operator/toPromise';
+       async ngOnInit() {
+           const response = await this._WebService.getMessage();
+           console.log(response);
+       }
+
+     getMessage() {
+           return this._http.get(`http://localhost:38077/api/messages`).toPromise();
+          }
  
 Use Reactive Forms 
 
 
 Parent Component Listen to Child Component 
- Can do this with angular outOuts viewChilds
-childeComponent  Output, EventEmitter } from '@angular/core'
-childeComponent  @Output() onPosted = new EventEmitter();
-ParentComponent onPosted(message) {console.log(message);}
-On add diractive <app-new-message (onPosted)="onPosted($event)"></app-new-message>
-To function you want fire event at parent    this.onPosted.emit(this.message);
+ Can do this with angular outOuts 
+ viewChilds
+ childeComponent  Output, EventEmitter } from '@angular/core'
+ childeComponent  @Output() onPosted = new EventEmitter();
+ ParentComponent onPosted(message) {console.log(message);}
+ On add diractive <app-new-message (onPosted)="onPosted($event)"></app-new-message>
+  To function you want fire event at parent    this.onPosted.emit(this.message);
 
 
 
 
 Push data from parent to child by viewChild
-1.	import { ViewChild } from '@angular/core';
-2.	 @ViewChild(MessagesComponent) messages: MessagesComponent; this object have any parameter or function for child
+ 	import { ViewChild } from '@angular/core';
+  @ViewChild(MessagesComponent) messages: MessagesComponent; this object have any parameter or function for child
 
 
 Create Datastore Shared between component 
@@ -79,7 +80,7 @@ Broadcast an event with subject
 Steps
 1.	At service import import { Subject } from 'rxjs/Rx';
 2.	Create object will call  messagesSubject = new Subject();
-3.	     this.messagesSubject.next(this.messages);
+3.  this.messagesSubject.next(this.messages);
 4.	this._WebService.messagesSubject.subscribe(messages => {  this.messages = messages; });
                                 
 
